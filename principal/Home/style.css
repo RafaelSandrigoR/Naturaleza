@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Pog';
+    src: url('fontes/CELTG___.TTF') format('opentype');
+    font-weight: normal;
+}
+
+:root{
+     --cor1:#49F452;
+     --cor2:#00F20B;
+     --cor3:#00BF0A;
+     --cor4:#227326;
+     --cor5:#007306;
+
+     --fonteMenu:'Pog', Arial, sans-serif;
+     --fonteText:Arial,sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(29, 28, 27);
+    font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+    
+}
+
+
+header{
+    width: 100%;
+    background-color: black;
+    
+}
+
+menu{
+    margin:auto;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    min-width: 320px;
+    max-width: 1000px;
+}
+
+.nat {
+    background-color: var(--cor5);
+    border-radius: 5px;
+}
+
+menu text{
+    display: flex;
+    color: white;
+    width: min(100% - 30px, 1200px);
+}
+
+menu text >h1{
+    margin: 25px 5px 25px 40px;
+    border: 2px;
+}
+
+.textMenu a{
+text-decoration: none;
+color: rgb(83, 83, 83);
+transition-property: outline-offset, outline-color;
+transition-duration: 25s;
+font-family: var(--fonteMenu);
+width: 100%;
+}
+.textMenu :hover{
+    color: #ffffff;
+    outline: 2px solid #fff;
+    border-radius: 5px;
+    background-color:var(--cor4)
+}
+
+.itemMenu{
+    font-size: min(30px, 3vw);
+}
+
+
+/*------------------MAIN------------------------*/
+
+main{
+    /*margin: 10px;*/
+    margin: 10px auto 10px auto;
+    min-width: 320px;
+    max-width: 1000px;
+    padding: 5px; 
+    border-radius: 5px;
+    background-image: linear-gradient(to right, var(--cor2), var(--cor4));
+    background-size: 500% 100%;
+    animation: animacaoBg 5s infinite alternate;
+    /*rgb(47, 0, 255), #2ca13c, #28522d*/
+}
+
+@keyframes animacaoBg {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+
+.imCamp{
+    height: 33.333%;
+    width: 33.333%;
+    margin: 0px;
+    padding: 0px 2px 2px 2px;
+}
+
+.slot{
+    margin: 10px 0px 10px 0px;
+   
+    min-width: 320px;
+    max-width: 1000px;
+    display: flex;
+    border-radius: 5px;
+    border: 2px black;
+    
+}
+.texto > h1{
+    font-size: max(12px, 1.5vw) ;
+    font-weight: bold;
+    display: flex;
+    margin: 0px;
+    padding: 5px 5px 0px 5px;
+    border: 5px;
+    border-top-right-radius:5px ;
+    border-bottom-right-radius:5px ;
+    height: auto;
+    font-family: var(--);
+    background-color: #ffffff;
+}
+
+ipe{
+    flex-direction: row-reverse;
+}
+
+ipe img{
+    justify-content: center;
+    margin: 2px     ;
+}
+
+/*---------------------FOOTER-----------------------*/
+
+footer{
+    background-color: var(--cor5);
+    height: 100%;
+
+}
+
+footer credito {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    min-width: (320px);
+    max-width: (100%);
+}
+
+footer credito h1{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    padding: 5px;
+    color:  white;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
